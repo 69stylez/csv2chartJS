@@ -19,6 +19,7 @@
       })
       .then(response => {
         var ctx = document.getElementById('canvas').getContext('2d')
+        
         window.my_chart = new Chart(ctx, {
           type: 'bar',
           data: response.data,
@@ -33,6 +34,7 @@
             }
           }
         })
+
       })
       .catch(response => {
       })
