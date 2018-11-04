@@ -22,7 +22,13 @@
         
         window.my_chart = new Chart(ctx, {
           type: 'horizontalBar',
-          data: response.data,
+          // data: response.data,
+          data: {
+              labels: ['Running', 'Swimming', 'Eating', 'Cycling'],
+              datasets: [{
+                  data: [20, 10, 4, 2]
+              }]
+          }          
           options: {
             responsive: false,
             legend: {
